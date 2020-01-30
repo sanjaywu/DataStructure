@@ -15,15 +15,15 @@ typedef struct seqlist{
  */
 void init_seqlist(seq_plist *list)
 {
-	*list = (seq_plist)malloc(sizeof(seq_list));	/* 申请内存空间 */
-	if (NULL == *list)
-	{
-		printf("申请内存失败\n");
-		perror("malloc");	/* 打印申请内存失败的原因*/
-		exit(1);			/* 让当前程序结束 */
-	}
-	
-	(*list)->last = -1; /* 设置last为-1 */
+    *list = (seq_plist)malloc(sizeof(seq_list));	/* 申请内存空间 */
+    if (NULL == *list)
+    {
+        printf("申请内存失败\n");
+        perror("malloc");	/* 打印申请内存失败的原因*/
+        exit(1);			/* 让当前程序结束 */
+    }
+    
+    (*list)->last = -1; /* 设置last为-1 */
 }
 
 /* 插入数据
