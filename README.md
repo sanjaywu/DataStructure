@@ -9,3 +9,5 @@
 #### seqstack.c:顺序栈
 
 #### linkstack.c:链栈
+
+#### seqqueue.c:循环队列
